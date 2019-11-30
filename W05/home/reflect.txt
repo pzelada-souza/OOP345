@@ -1,0 +1,67 @@
+// Name:                            Pedro Zelada Souza
+// Seneca Student ID:               116427188
+// Seneca email:                    pzelada-souza@myseneca.ca
+// Date of completion:              17-10-2019
+//
+// I confirm that the content of this file is created by me,
+// with the exception of the parts provided to me by my professor.
+
+
+
+- Learning Outcome:
+
+In this workshop, I learned about lambda expressions, functors (function objects) and exception handling.
+
+Lambda expressions are anonymous functions that are used within the body of other functions and that usually
+have a single use. Lambda expressions are usually practical and with compact code that has no need to be reused
+elsewhere.
+
+Functors are objects or classes that act like functions. They can be achieved in C++ by overloading the ()
+operator, which is the function operator. They can be passed as parameter in other functions and referenced
+with pointers.
+
+Exceptions are unexpected behaviors in the code that can cause the program to stop working or to work in unintended
+ways. By handling exceptions, we can make sure that the program will keep working even after meeting such
+unexpected results. Handling exceptions also help identify how the program is behaving wrongly in a manner
+that makes fixing it easier.
+
+The difference between utilization of a lambda expression and a functor is that lambda expressions are limited
+to the scope where they are declared. Functors can be utilized anywhere where they can be seen.
+
+It is better to use a lambda expression when you need to perform a simple task within your code, while using
+Functors is better when you have to relate different modules.
+
+The constructor of spellchecker causes an error because it loads outside resources from a file that may or may
+not exist. To fix that, I would use an enumerator for each set of words (bad and good words). This way there
+is no need to load resources from outside.
+
+Movie and Book could be a template class and each would be set apart from the other by an enumerator.
+They could also both be implemented through inheritance, both classes being child class from a parent class 
+that implements the shared logic as its own function.
+
+The default constructor for both Movie and Book classes could be removed, but it opens the program to unexpected
+behaviours by allowing garbage to be stored in the attributes of the objects.
+
+
+- Quiz 05 Reflection:
+
+1. What is the advantage of using string_view?
+
+string_view does not own or allocate memory, can point into existing string 
+and is one level less indirect than a string pointer
+
+2. Name three sequential containers?
+
+Vector, array, deque
+
+3. What are vectors? What is the advantage of using vectors?
+
+Vectors are contiguous storage of variable size. 
+The elements are stored contiguously in memory and the size of the vector is adjusted as needed.
+
+4. stack and queue are used in what contexts?
+
+Stacks are LIFO structures (last in, first out). They are used for recursion, reversing and backtracking.
+
+Queues are FIFO structures (first in, first out). They are used in asynchronous tasks, schedules and to queue
+up jobs.
